@@ -8,6 +8,8 @@ import { useHistory } from "react-router";
 export default function Navi() {
   const [isAuthenticated, setIsAuthenticated] = useState(true)
   const history = useHistory()
+  const  {cartItems} = useSelector(state => state.cart)
+
   function handleSignOut() {
     setIsAuthenticated(false)
     history.push("/")
