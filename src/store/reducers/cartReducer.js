@@ -7,7 +7,7 @@ const initialState={
 
 
 export default function cartReducer(state=initialState,{type,payload}){
-    switch (key) {
+    switch (type) {
         case ADD_TO_CART:
             let product = state.cartItems.find(c=>c.product.id==payload.id)
             if (product) {
