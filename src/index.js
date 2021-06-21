@@ -7,6 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 import {Provider} from "react-redux"
 import { configure } from '@testing-library/react';
 import { configureStore } from './store/contigureStore';
+import "react-toastify/dist/ReactToastify.min.css"
 
 
 
